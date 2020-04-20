@@ -8,5 +8,8 @@ branches:
 script:
     - make test
 
+notifications:
+    email: false
+
 #after_script:
 #        - if [ "${COVERITY_SCAN_BRANCH}" == 1 ]; then cat /home/travis/build/yasukei/libstrut/cov-int/build-log.txt; fi
