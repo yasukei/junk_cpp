@@ -1,13 +1,15 @@
-# Reference
+[![Build Status](https://travis-ci.org/yasukei/junk_cpp.svg)](https://travis-ci.org/yasukei/junk_cpp)
+
+## Reference
 https://ja.cppreference.com/w/cpp/header
 
-# コンセプトライブラリ
+## コンセプトライブラリ
 <concepts> (C++20以上)	基礎的なライブラリコンセプト
 
-# コルーチンライブラリ
+## コルーチンライブラリ
 <coroutine> (C++20以上)	コルーチンサポートライブラリ
 
-# ユーティリティライブラリ
+## ユーティリティライブラリ
 <cstdlib>	汎用ユーティリティ: プログラム制御、動的メモリ確保、乱数、ソートと検索
 <csignal>	シグナル管理のための関数とマクロ定数
 <csetjmp>	実行コンテキストを保存 (およびジャンプ) するマクロ (および関数)
@@ -30,26 +32,26 @@ https://ja.cppreference.com/w/cpp/header
 <version> (C++20以上)	実装依存のライブラリ情報を供給します
 <source_location> (C++20以上)	ソースコード位置情報を取得する手段を供給します
 
-# 動的メモリ管理
+## 動的メモリ管理
 <new>	低水準メモリ管理ユーティリティ
 <memory>	高水準メモリ管理ユーティリティ
 <scoped_allocator> (C++11以上)	ネストされたアロケータクラス
 <memory_resource> (C++17以上)	多相アロケータとメモリリソース
 
-# 数値の限界
+## 数値の限界
 <climits>	整数型の限界
 <cfloat>	浮動小数点型の限界
 <cstdint> (C++11以上)	固定サイズの型と他の型の限界
 <cinttypes> (C++11以上)	書式マクロ、intmax_t および uintmax_t の数学と変換
 <limits>	算術型の特性を問い合わせる標準化された方法
 
-# エラー処理
+## エラー処理
 <exception>	例外処理ユーティリティ
 <stdexcept>	標準の例外オブジェクト
 <cassert>	引数をゼロと比較する条件コンパイルされるマクロ
 <system_error> (C++11以上)	プラットフォーム依存のエラーコード std::error_code の定義
 <cerrno>	最後のエラー番号を保持するマクロ
-# 文字列ライブラリ
+## 文字列ライブラリ
 <cctype>	文字の種類を判定する関数
 <cwctype>	ワイド文字の種類を判定する関数
 <cstring>	様々なナロー文字列処理関数
@@ -60,7 +62,7 @@ https://ja.cppreference.com/w/cpp/header
 <charconv> (C++17以上)	std::to_chars および std::from_chars
 <format> (C++20以上)	書式化ライブラリ (std::format など)
 
-# コンテナライブラリ
+## コンテナライブラリ
 <array> (C++11以上)	std::array コンテナ
 <vector>	std::vector コンテナ
 <deque>	std::deque コンテナ
@@ -74,17 +76,17 @@ https://ja.cppreference.com/w/cpp/header
 <queue>	std::queue および std::priority_queue コンテナアダプタ
 <span> (C++20以上)	std::span ビュー
 
-# イテレータライブラリ
+## イテレータライブラリ
 <iterator>	範囲のイテレータ
 
-# 範囲ライブラリ
+## 範囲ライブラリ
 <ranges> (C++20以上)	範囲アクセス、プリミティブ、要件、ユーティリティおよびアダプタ
 
-# アルゴリズムライブラリ
+## アルゴリズムライブラリ
 <algorithm>	範囲に対する操作を行うアルゴリズム
 <execution> (C++17以上)	並列版のアルゴリズムのための定義済みの実行ポリシー
 
-# 数値演算ライブラリ
+## 数値演算ライブラリ
 <cmath>	一般的な数学関数
 <complex>	複素数型
 <valarray>	値の配列を表現、操作するためのクラス
@@ -95,7 +97,7 @@ https://ja.cppreference.com/w/cpp/header
 <bit> (C++20以上)	ビット操作関数
 <numbers> (C++20以上)	数学定数
 
-# 入出力ライブラリ
+## 入出力ライブラリ
 <iosfwd>	入出力ライブラリのすべてのクラスの前方宣言
 <ios>	std::ios_base クラス、std::basic_ios クラステンプレートといくつかの typedef
 <istream>	std::basic_istream クラステンプレートといくつかの typedef
@@ -109,18 +111,18 @@ https://ja.cppreference.com/w/cpp/header
 <streambuf>	std::basic_streambuf クラステンプレート
 <cstdio>	C スタイルの入出力関数
 
-# ローカライゼーションライブラリ
+## ローカライゼーションライブラリ
 <locale>	ローカライゼーションユーティリティ
 <clocale>	C のローカライゼーションユーティリティ
 <codecvt> (C++11以上) (C++17で非推奨)	Unicode 変換機能
 
-# 正規表現ライブラリ
+## 正規表現ライブラリ
 <regex> (C++11以上)	正規表現処理をサポートするクラス、アルゴリズムおよびイテレータ
 
-# アトミック操作ライブラリ
+## アトミック操作ライブラリ
 <atomic> (C++11以上)	アトミック操作ライブラリ
 
-# スレッドサポートライブラリ
+## スレッドサポートライブラリ
 <thread> (C++11以上)	std::thread クラスとサポート関数
 <stop_token> (C++20以上)	std::jthread のためのストップトークン
 <mutex> (C++11以上)	相互排他プリミティブ
@@ -131,5 +133,5 @@ https://ja.cppreference.com/w/cpp/header
 <latch> (C++20以上)	ラッチ
 <barrier> (C++20以上)	バリア
 
-#ファイルシステムライブラリ
+##ファイルシステムライブラリ
 <filesystem> (C++17以上)	std::path クラスとサポート関数
