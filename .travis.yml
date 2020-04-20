@@ -1,12 +1,12 @@
-language: c++
+language: cpp
 compiler: gcc
 
 branches:
-	only:
-		- master
+    only:
+        - master
 
 script:
-	- make test
+    - make test
 
 #after_script:
 #        - if [ "${COVERITY_SCAN_BRANCH}" == 1 ]; then cat /home/travis/build/yasukei/libstrut/cov-int/build-log.txt; fi
