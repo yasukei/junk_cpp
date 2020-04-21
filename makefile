@@ -3,7 +3,7 @@ TARGET=thread
 
 all:
 	mkdir -p ${BUILD_DIR}
-	cd ${BUILD_DIR} && cmake .. && make
+	cd ${BUILD_DIR} && cmake .. && VERBOSE=TRUE make
 
 clean:
 	rm -rf ${BUILD_DIR}
