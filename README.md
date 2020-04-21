@@ -127,7 +127,6 @@ https://ja.cppreference.com/w/cpp/header
 <atomic> (C++11以上)	アトミック操作ライブラリ
 
 ## スレッドサポートライブラリ
-<thread> (C++11以上)	std::thread クラスとサポート関数
 <stop_token> (C++20以上)	std::jthread のためのストップトークン
 <mutex> (C++11以上)	相互排他プリミティブ
 <shared_mutex> (C++14以上)	共有可能な相互排他プリミティブ
