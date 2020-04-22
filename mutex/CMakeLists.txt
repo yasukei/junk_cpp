@@ -8,6 +8,7 @@ find_package (Threads)
 add_executable(
 	${PROJECT_NAME}
 	${PROJECT_NAME}.cpp
+	lock_guard.cpp
 	)
 
 target_compile_features(

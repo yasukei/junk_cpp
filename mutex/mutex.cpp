@@ -34,6 +34,7 @@ private:
 	std::mutex& _mtx;
 };
 
+extern void lock_guard_main();
 int main()
 {
 	std::mutex mtx;
@@ -50,5 +51,7 @@ int main()
 	thread2.join();
 	thread3.join();
 	printf("after join\n");
+
+	lock_guard_main();
 	return 0;
 }
