@@ -129,7 +129,6 @@ https://ja.cppreference.com/w/cpp/header
 ## スレッドサポートライブラリ
 <stop_token> (C++20以上)	std::jthread のためのストップトークン
 <shared_mutex> (C++14以上)	共有可能な相互排他プリミティブ
-<future> (C++11以上)	非同期計算のためのプリミティブ
 <condition_variable> (C++11以上)	スレッドの待機状態
 <semaphore> (C++20以上)	セマフォ
 <latch> (C++20以上)	ラッチ

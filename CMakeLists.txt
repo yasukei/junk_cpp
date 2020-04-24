@@ -39,5 +39,9 @@ enable_testing()
 ## スレッドサポートライブラリ
 # <thread> (C++11以上)	std::thread クラスとサポート関数
 add_subdirectory(thread)
+
 # <mutex> (C++11以上)	相互排他プリミティブ
 add_subdirectory(mutex)
+
+# <future> (C++11以上)	非同期計算のためのプリミティブ
+add_subdirectory(future)
