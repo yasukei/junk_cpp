@@ -24,7 +24,6 @@ https://ja.cppreference.com/w/cpp/header
 <functional>	関数オブジェクト、関数呼び出し、バインド操作、参照ラッパー
 <utility>	様々なユーティリティ部品
 <ctime>	C スタイルの日付と時間のユーティリティ
-<chrono> (C++11以上)	C++ の時間ユーティリティ
 <cstddef>	標準的なマクロと typedef
 <initializer_list> (C++11以上)	std::initializer_list クラステンプレート
 <any> (C++17以上)	std::any クラス
