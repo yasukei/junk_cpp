@@ -63,7 +63,6 @@ https://ja.cppreference.com/w/cpp/header
 <format> (C++20以上)	書式化ライブラリ (std::format など)
 
 ## コンテナライブラリ
-<deque>	std::deque コンテナ
 <forward_list> (C++11以上)	std::forward_list コンテナ
 <set>	std::set および std::multiset 連想コンテナ
 <map>	std::map および std::multimap 連想コンテナ
