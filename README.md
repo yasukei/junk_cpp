@@ -64,7 +64,6 @@ https://ja.cppreference.com/w/cpp/header
 
 ## コンテナライブラリ
 <deque>	std::deque コンテナ
-<list>	std::list コンテナ
 <forward_list> (C++11以上)	std::forward_list コンテナ
 <set>	std::set および std::multiset 連想コンテナ
 <map>	std::map および std::multimap 連想コンテナ

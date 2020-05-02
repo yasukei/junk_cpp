@@ -36,6 +36,9 @@ add_subdirectory(array)
 ### <vector>	std::vector コンテナ
 add_subdirectory(vector)
 
+### <list>	std::list コンテナ
+add_subdirectory(list)
+
 ## イテレータライブラリ
 
 ## 範囲ライブラリ
