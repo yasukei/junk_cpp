@@ -69,7 +69,6 @@ https://ja.cppreference.com/w/cpp/header
 <unordered_set> (C++11以上)	std::unordered_set および std::unordered_multiset 非順序連想コンテナ
 <unordered_map> (C++11以上)	std::unordered_map および std::unordered_multimap 非順序連想コンテナ
 <stack>	std::stack コンテナアダプタ
-<queue>	std::queue および std::priority_queue コンテナアダプタ
 <span> (C++20以上)	std::span ビュー
 
 ## イテレータライブラリ

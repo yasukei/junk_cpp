@@ -42,6 +42,8 @@ add_subdirectory(list)
 ### <deque>	std::deque コンテナ
 add_subdirectory(deque)
 
+### <queue>	std::queue および std::priority_queue コンテナアダプタ
+add_subdirectory(queue)
 
 ## イテレータライブラリ
 
