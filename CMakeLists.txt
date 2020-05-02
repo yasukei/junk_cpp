@@ -30,6 +30,11 @@ add_subdirectory(chrono)
 ## 文字列ライブラリ
 
 ## コンテナライブラリ
+### <array> (C++11以上)	std::array コンテナ
+add_subdirectory(array)
+
+### <vector>	std::vector コンテナ
+add_subdirectory(vector)
 
 ## イテレータライブラリ
 

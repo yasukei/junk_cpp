@@ -63,8 +63,6 @@ https://ja.cppreference.com/w/cpp/header
 <format> (C++20以上)	書式化ライブラリ (std::format など)
 
 ## コンテナライブラリ
-<array> (C++11以上)	std::array コンテナ
-<vector>	std::vector コンテナ
 <deque>	std::deque コンテナ
 <list>	std::list コンテナ
 <forward_list> (C++11以上)	std::forward_list コンテナ
