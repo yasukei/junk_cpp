@@ -9,16 +9,16 @@ enable_testing()
 ## コルーチンライブラリ
 
 ## ユーティリティライブラリ
-# <bitset>	std::bitset クラステンプレート
+### <bitset>	std::bitset クラステンプレート
 add_subdirectory(bitset)
 
-# <tuple> (C++11以上)	std::tuple クラステンプレート
+### <tuple> (C++11以上)	std::tuple クラステンプレート
 add_subdirectory(tuple)
 
-# <ctime>	C スタイルの日付と時間のユーティリティ
+### <ctime>	C スタイルの日付と時間のユーティリティ
 add_subdirectory(ctime)
 
-# <chrono> (C++11以上)	C++ の時間ユーティリティ
+### <chrono> (C++11以上)	C++ の時間ユーティリティ
 add_subdirectory(chrono)
 
 ## 動的メモリ管理
@@ -48,11 +48,11 @@ add_subdirectory(chrono)
 ## アトミック操作ライブラリ
 
 ## スレッドサポートライブラリ
-# <thread> (C++11以上)	std::thread クラスとサポート関数
+### <thread> (C++11以上)	std::thread クラスとサポート関数
 add_subdirectory(thread)
 
-# <mutex> (C++11以上)	相互排他プリミティブ
+### <mutex> (C++11以上)	相互排他プリミティブ
 add_subdirectory(mutex)
 
-# <future> (C++11以上)	非同期計算のためのプリミティブ
+### <future> (C++11以上)	非同期計算のためのプリミティブ
 add_subdirectory(future)
