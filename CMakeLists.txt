@@ -15,6 +15,9 @@ add_subdirectory(bitset)
 # <tuple> (C++11以上)	std::tuple クラステンプレート
 add_subdirectory(tuple)
 
+# <ctime>	C スタイルの日付と時間のユーティリティ
+add_subdirectory(ctime)
+
 # <chrono> (C++11以上)	C++ の時間ユーティリティ
 add_subdirectory(chrono)
 
