@@ -21,7 +21,6 @@ https://ja.cppreference.com/w/cpp/header
 <typeinfo>	実行時型情報ユーティリティ
 <typeindex> (C++11以上)	std::type_index
 <type_traits> (C++11以上)	コンパイル時型情報
-<bitset>	std::bitset クラステンプレート
 <functional>	関数オブジェクト、関数呼び出し、バインド操作、参照ラッパー
 <utility>	様々なユーティリティ部品
 <ctime>	C スタイルの日付と時間のユーティリティ

@@ -9,6 +9,8 @@ enable_testing()
 ## コルーチンライブラリ
 
 ## ユーティリティライブラリ
+# <bitset>	std::bitset クラステンプレート
+add_subdirectory(bitset)
 
 ## 動的メモリ管理
 
