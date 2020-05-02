@@ -12,6 +12,9 @@ enable_testing()
 # <bitset>	std::bitset クラステンプレート
 add_subdirectory(bitset)
 
+# <tuple> (C++11以上)	std::tuple クラステンプレート
+add_subdirectory(tuple)
+
 ## 動的メモリ管理
 
 ## 数値の限界

@@ -27,7 +27,6 @@ https://ja.cppreference.com/w/cpp/header
 <chrono> (C++11以上)	C++ の時間ユーティリティ
 <cstddef>	標準的なマクロと typedef
 <initializer_list> (C++11以上)	std::initializer_list クラステンプレート
-<tuple> (C++11以上)	std::tuple クラステンプレート
 <any> (C++17以上)	std::any クラス
 <optional> (C++17以上)	std::optional クラステンプレート
 <variant> (C++17以上)	std::variant クラステンプレート
