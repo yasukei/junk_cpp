@@ -70,3 +70,5 @@ add_subdirectory(mutex)
 
 ### <future> (C++11以上)	非同期計算のためのプリミティブ
 add_subdirectory(future)
+
+add_subdirectory(app/othello)
