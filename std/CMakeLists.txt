@@ -39,6 +39,9 @@ add_subdirectory(vector)
 ### <list>	std::list コンテナ
 add_subdirectory(list)
 
+### <forward_list> (C++11以上)	std::forward_list コンテナ
+add_subdirectory(forward_list)
+
 ### <deque>	std::deque コンテナ
 add_subdirectory(deque)
 
