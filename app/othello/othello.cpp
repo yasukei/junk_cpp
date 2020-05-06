@@ -78,8 +78,8 @@ public:
 	Board(
 		size_t row_size = 8,
 		size_t col_size = 8,
-		char first_row_label = '1',
-		char first_col_label = 'a'
+		char first_row_label = '0',
+		char first_col_label = '0'
 	) :
 		_board(row_size, std::vector<Object*>(col_size, None::getInstance())),
 		_row_label(),
@@ -153,10 +153,67 @@ private:
 	std::vector<char> _col_label;
 };
 
+class OthelloBoard
+{
+public:
+	virtual void put(size_t row, size_t col) = 0;
+};
+
+class OthelloPlayer
+{
+public:
+	virtual void notifyYourTurn(OthelloBoard& board) = 0;
+};
+
+class OthelloRule
+{
+public:
+	bool isValidMove(const Board& board, const Object& next_move)
+	{
+
+	}
+};
+
+class OthelloGame : public OthelloBoard
+{
+public:
+	OthelloGame(
+		OthelloPlayer& blackPlayer,
+		OthelloPlayer& whitePlayer
+		) :
+		_board(8, 8, 'a', '1'),
+		_blackPlayer(blackPlayer),
+		_whitePlayer(whitePlayer),
+		_isBlackTurn(true)
+	{
+		_board.put(3, 3, WhiteStone::getInstance());
+		_board.put(4, 4, WhiteStone::getInstance());
+		_board.put(3, 4, BlackStone::getInstance());
+		_board.put(4, 3, BlackStone::getInstance());
+	}
+
+	void put(size_t row, size_t col) override
+	{
+		Object* stone = _isBlackTurn ? (Object*)BlackStone::getInstance() : (Object*)WhiteStone::getInstance();
+		_board.put(row, col, stone);
+		_isBlackTurn = !_isBlackTurn;
+	}
+	void start()
+	{
+
+	}
+
+private:
+	Board _board;
+	OthelloPlayer& _blackPlayer;
+	OthelloPlayer& _whitePlayer;
+	bool _isBlackTurn;
+};
+
 class Command
 {
 public:
-	virtual const std::string& getCommandName() const = 0; // TODO: can I return 'reference'?
+	virtual const std::string& getCommandName() const = 0;
 	virtual void execute(const std::vector<std::string>& command_args, std::ostream& out) = 0;
 };
 
@@ -234,11 +291,10 @@ public:
 		auto it = _commands.find(command_name);
 		if (it == _commands.end())
 		{
-			out << "Error: '" << command_name << "' not found." << std::endl;
+			out << "Error: command '" << command_name << "' not found." << std::endl;
 			return;
 		}
 		it->second->execute(command_args, out);
-		out << std::endl;
 	}
 
 private:
@@ -274,6 +330,10 @@ public:
 			std::string s(buf.data());
 			std::istringstream iss(s);
 			std::vector<std::string> tokens{ std::istream_iterator<std::string>{iss}, std::istream_iterator<std::string>{} };
+			if (tokens.size() == 0)
+			{
+				continue;
+			}
 
 			std::string command_name = tokens.front();
 			tokens.erase(tokens.begin());
@@ -301,7 +361,9 @@ int main()
 	commands.addCommand(echo);
 	commands.addCommand(put);
 	CUI cui(commands);
-	//cui.run();
+#if _MSC_VER
+	cui.run();
+#endif
 
 	return 0;
 }
