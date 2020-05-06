@@ -45,6 +45,9 @@ add_subdirectory(deque)
 ### <queue>	std::queue および std::priority_queue コンテナアダプタ
 add_subdirectory(queue)
 
+### <stack>	std::stack コンテナアダプタ
+add_subdirectory(stack)
+
 ## イテレータライブラリ
 
 ## 範囲ライブラリ
