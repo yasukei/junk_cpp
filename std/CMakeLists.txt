@@ -51,6 +51,9 @@ add_subdirectory(queue)
 ### <stack>	std::stack コンテナアダプタ
 add_subdirectory(stack)
 
+### <map>	std::map および std::multimap 連想コンテナ
+add_subdirectory(map)
+
 ## イテレータライブラリ
 
 ## 範囲ライブラリ
