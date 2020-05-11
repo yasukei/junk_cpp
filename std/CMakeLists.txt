@@ -57,6 +57,8 @@ add_subdirectory(map)
 ### <set>	std::set および std::multiset 連想コンテナ
 add_subdirectory(set)
 
+### <unordered_map> (C++11以上)	std::unordered_map および std::unordered_multimap 非順序連想コンテナ
+add_subdirectory(unordered_map)
 
 ## イテレータライブラリ
 
