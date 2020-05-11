@@ -54,6 +54,10 @@ add_subdirectory(stack)
 ### <map>	std::map および std::multimap 連想コンテナ
 add_subdirectory(map)
 
+### <set>	std::set および std::multiset 連想コンテナ
+add_subdirectory(set)
+
+
 ## イテレータライブラリ
 
 ## 範囲ライブラリ
