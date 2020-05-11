@@ -18,7 +18,6 @@ https://ja.cppreference.com/w/cpp/header
 <csignal>	シグナル管理のための関数とマクロ定数
 <csetjmp>	実行コンテキストを保存 (およびジャンプ) するマクロ (および関数)
 <cstdarg>	可変長引数リストの処理
-<typeinfo>	実行時型情報ユーティリティ
 <typeindex> (C++11以上)	std::type_index
 <type_traits> (C++11以上)	コンパイル時型情報
 <functional>	関数オブジェクト、関数呼び出し、バインド操作、参照ラッパー

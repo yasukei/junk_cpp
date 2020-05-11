@@ -21,6 +21,9 @@ add_subdirectory(ctime)
 ### <chrono> (C++11以上)	C++ の時間ユーティリティ
 add_subdirectory(chrono)
 
+### <typeinfo>	実行時型情報ユーティリティ
+add_subdirectory(typeinfo)
+
 ## 動的メモリ管理
 
 ## 数値の限界
