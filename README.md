@@ -62,7 +62,6 @@ https://ja.cppreference.com/w/cpp/header
 <format> (C++20以上)	書式化ライブラリ (std::format など)
 
 ## コンテナライブラリ
-<unordered_set> (C++11以上)	std::unordered_set および std::unordered_multiset 非順序連想コンテナ
 <span> (C++20以上)	std::span ビュー
 
 ## イテレータライブラリ
