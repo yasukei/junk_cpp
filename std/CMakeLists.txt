@@ -71,6 +71,8 @@ add_subdirectory(unordered_set)
 ## 範囲ライブラリ
 
 ## アルゴリズムライブラリ
+### <algorithm>	範囲に対する操作を行うアルゴリズム
+add_subdirectory(algorithm)
 
 ## 数値演算ライブラリ
 
