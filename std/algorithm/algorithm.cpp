@@ -89,7 +89,7 @@ int main()
 	{
 		std::list<std::string> l = { "abc", "def", "ghi" };
 
-		auto printResult = [](std::list<std::string>::const_iterator& found, std::list<std::string>::const_iterator& end)
+		auto printResult = [](decltype(l)::const_iterator& found, decltype(l)::const_iterator& end)
 		{
 			if (found == end)
 			{
