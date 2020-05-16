@@ -157,6 +157,101 @@ int main()
 		std::for_each(v.cbegin(), v.cend(), print);
 		std::cout << "\n";
 	}
+	
+	std::cout << "\n[transform]\n";
+	{
+		std::set<char> s = { 'a', 'b', 'c' };
+		std::set<char> dest;
+
+		std::transform(s.begin(), s.end(), std::inserter(dest, dest.begin()), toupper);
+
+		std::for_each(dest.cbegin(), dest.cend(), [](char c) { std::cout << c << ", "; });
+		std::cout << "\n";
+	}
+
+	std::cout << "\n[generate]\n";
+	{
+		struct FlipFlopBool
+		{
+			bool operator()()
+			{
+				bool ret = _current;
+				_current = !_current;
+				return ret;
+			}
+
+			bool _current = true;
+		};
+
+		std::vector<bool> v(5);
+		FlipFlopBool f;
+		std::generate(v.begin(), v.end(), f);
+
+		std::for_each(v.cbegin(), v.cend(), [](bool b) { std::cout << b << ", "; });
+		std::cout << "\n";
+	}
+
+	std::cout << "\n[remove, remove_if]\n";
+	{
+		std::string s = "This Is String";
+
+		std::cout << s << "\n";
+		std::cout << "size: " << s.size() << "\n";
+
+		s.erase(std::remove(s.begin(), s.end(), ' '), s.end());
+
+		std::cout << s << "\n";
+		std::cout << "size: " << s.size() << "\n";
+
+		s.erase(std::remove_if(s.begin(), s.end(), [](char c) {return tolower(c) != c; }), s.end());
+
+		std::cout << s << "\n";
+		std::cout << "size: " << s.size() << "\n";
+	}
+
+	std::cout << "\n[swap]\n";
+	{
+		std::string s1 = "a";
+		std::string s2 = "bb";
+
+		std::cout << s1 << "\n";
+		std::cout << "size: " << s1.size() << "\n";
+		std::cout << s2 << "\n";
+		std::cout << "size: " << s2.size() << "\n";
+
+		std::swap(s1, s2);
+
+		std::cout << s1 << "\n";
+		std::cout << "size: " << s1.size() << "\n";
+		std::cout << s2 << "\n";
+		std::cout << "size: " << s2.size() << "\n";
+	}
+
+	std::cout << "\n[rotate]\n";
+	{
+		std::array<int, 5> a = { 1, 2, 3, 4, 5 };
+
+		std::for_each(a.cbegin(), a.cend(), [](int i) { std::cout << i << ", "; });
+		std::cout << "\n";
+
+		std::rotate(a.begin()+1, a.begin()+2, a.end()-1);
+
+		std::for_each(a.cbegin(), a.cend(), [](int i) { std::cout << i << ", "; });
+		std::cout << "\n";
+	}
+
+	std::cout << "\n[sort]\n";
+	{
+		std::vector<int> v = { 2, 1, 4, 3, 5, 7, 6, 10, 8, 9 };
+
+		std::for_each(v.cbegin(), v.cend(), [](int i) { std::cout << i << ", "; });
+		std::cout << "\n";
+
+		std::sort(v.begin(), v.end());
+
+		std::for_each(v.cbegin(), v.cend(), [](int i) { std::cout << i << ", "; });
+		std::cout << "\n";
+	}
 
 	return 0;
 }
