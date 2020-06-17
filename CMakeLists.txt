@@ -4,5 +4,6 @@ project(junk_cpp)
 include(CTest)
 enable_testing()
 
-add_subdirectory(std)
 add_subdirectory(app)
+add_subdirectory(lib)
+add_subdirectory(std)
