@@ -77,6 +77,8 @@ add_subdirectory(algorithm)
 ## 数値演算ライブラリ
 
 ## 入出力ライブラリ
+### <sstream>	std::basic_stringstream, std::basic_istringstream, std::basic_ostringstream クラステンプレートといくつかの typedef
+add_subdirectory(sstream)
 
 ## ローカライゼーションライブラリ
 

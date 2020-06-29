@@ -91,7 +91,6 @@ https://ja.cppreference.com/w/cpp/header
 <ostream>	std::basic_ostream, std::basic_iostream クラステンプレートといくつかの typedef
 <iostream>	いくつかの標準ストリームオブジェクト
 <fstream>	std::basic_fstream, std::basic_ifstream, std::basic_ofstream クラステンプレートといくつかの typedef
-<sstream>	std::basic_stringstream, std::basic_istringstream, std::basic_ostringstream クラステンプレートといくつかの typedef
 <syncstream> (C++20以上)	std::basic_osyncstream, std::basic_syncbuf と typedef
 <strstream> (C++98で非推奨)	std::strstream, std::istrstream, std::ostrstream
 <iomanip>	入出力の書式を制御するヘルパー関数
