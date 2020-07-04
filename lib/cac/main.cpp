@@ -2,7 +2,7 @@
 
 #include "cac.hpp"
 
-int main()
+int __main()
 {
 	std::cout << "hello" << std::endl;
 	
@@ -19,4 +19,12 @@ int main()
 	rh.pack(buf);
 
 	return 0;
+}
+
+#include <gtest/gtest.h>
+
+TEST(aaa, bbb)
+{
+	__main();
+	EXPECT_TRUE(true);
 }
