@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <array>
+#include <cstring>
 
 #define cCacMaxDataSize 1024
 
