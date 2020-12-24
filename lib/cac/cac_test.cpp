@@ -1,11 +1,12 @@
 #include <iostream>
+#include <vector>
 
 #include "cac.hpp"
 
-int __main()
+#include <gtest/gtest.h>
+
+TEST(aaa, bbb)
 {
-	std::cout << "hello" << std::endl;
-	
 	cac::RequestHeader rh;
 
 	rh.typeId.data = cac::TypeId::Request;
@@ -14,17 +15,11 @@ int __main()
 	rh.transactionId.data = 1;
 	rh.size = 2;
 
-	uint8_t buf[32] = { 0 };
+	std::vector<uint8_t> buf(6, 0);
 
-	rh.pack(buf);
+	rh.pack(buf.data());
 
-	return 0;
-}
+	std::vector<uint8_t> expect = { 0x52, 0x01, 0x02, 0x00, 0x00, 0x00 };
 
-#include <gtest/gtest.h>
-
-TEST(aaa, bbb)
-{
-	__main();
-	EXPECT_TRUE(true);
+	EXPECT_EQ(expect, buf);
 }

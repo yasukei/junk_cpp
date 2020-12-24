@@ -8,8 +8,8 @@ find_package (Threads)
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreadedDebug")
 add_executable(
 	${PROJECT_NAME}
-	"main.cpp"
 	"cac.cpp"
+	"cac_test.cpp"
 	)
 
 target_compile_features(
